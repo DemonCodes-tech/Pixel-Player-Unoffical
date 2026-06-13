@@ -1,64 +1,111 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import { saveSetting, getSetting, deleteSetting } from '@/lib/db';
+import { extractDominantHue, applyPalette, resetPalette, type CustomPalette } from '@/lib/palette';
 
-type Theme = "light" | "dark";
+type Theme = 'dark' | 'light' | 'system';
 
 interface ThemeContextType {
   theme: Theme;
-  toggleTheme?: () => void;
-  switchable: boolean;
+  setTheme: (t: Theme) => void;
+  isDark: boolean;
+  backgroundUrl: string | null;
+  palette: CustomPalette | null;
+  setBackground: (file: File) => Promise<void>;
+  clearBackground: () => Promise<void>;
 }
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext<ThemeContextType>({
+  theme: 'dark',
+  setTheme: () => {},
+  isDark: true,
+  backgroundUrl: null,
+  palette: null,
+  setBackground: async () => {},
+  clearBackground: async () => {},
+});
 
-interface ThemeProviderProps {
-  children: React.ReactNode;
-  defaultTheme?: Theme;
-  switchable?: boolean;
-}
-
-export function ThemeProvider({
-  children,
-  defaultTheme = "light",
-  switchable = false,
-}: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (switchable) {
-      const stored = localStorage.getItem("theme");
-      return (stored as Theme) || defaultTheme;
-    }
-    return defaultTheme;
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [theme, setThemeState] = useState<Theme>(
+    () => (localStorage.getItem('pp-theme') as Theme) || 'dark'
+  );
+  const [backgroundUrl, setBackgroundUrl] = useState<string | null>(null);
+  const [palette, setPalette] = useState<CustomPalette | null>(() => {
+    try {
+      const raw = localStorage.getItem('pp-palette');
+      return raw ? (JSON.parse(raw) as CustomPalette) : null;
+    } catch { return null; }
   });
 
+  const isDark =
+    theme === 'dark' ||
+    (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+  // Apply / remove dark class
   useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
+    document.documentElement.classList.toggle('dark', isDark);
+  }, [isDark]);
+
+  // Apply palette whenever palette or isDark changes
+  useEffect(() => {
+    if (palette) {
+      applyPalette(palette, isDark);
     } else {
-      root.classList.remove("dark");
+      resetPalette();
     }
+  }, [palette, isDark]);
 
-    if (switchable) {
-      localStorage.setItem("theme", theme);
-    }
-  }, [theme, switchable]);
-
-  const toggleTheme = switchable
-    ? () => {
-        setTheme(prev => (prev === "light" ? "dark" : "light"));
+  // Load persisted background image from IndexedDB on mount
+  useEffect(() => {
+    getSetting<Blob>('backgroundBlob').then(blob => {
+      if (blob) {
+        const url = URL.createObjectURL(blob);
+        setBackgroundUrl(url);
       }
-    : undefined;
+    });
+    return () => {
+      if (backgroundUrl) URL.revokeObjectURL(backgroundUrl);
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  function setTheme(t: Theme) {
+    setThemeState(t);
+    localStorage.setItem('pp-theme', t);
+  }
+
+  const setBackground = useCallback(async (file: File) => {
+    // Revoke previous URL
+    if (backgroundUrl) URL.revokeObjectURL(backgroundUrl);
+
+    const blob = file.slice(0, file.size, file.type);
+    await saveSetting('backgroundBlob', blob);
+
+    const url = URL.createObjectURL(blob);
+    setBackgroundUrl(url);
+
+    // Extract palette from image
+    const extracted = await extractDominantHue(url);
+    setPalette(extracted);
+    localStorage.setItem('pp-palette', JSON.stringify(extracted));
+  }, [backgroundUrl]);
+
+  const clearBackground = useCallback(async () => {
+    if (backgroundUrl) URL.revokeObjectURL(backgroundUrl);
+    setBackgroundUrl(null);
+    setPalette(null);
+    localStorage.removeItem('pp-palette');
+    await deleteSetting('backgroundBlob');
+    resetPalette();
+  }, [backgroundUrl]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, switchable }}>
+    <ThemeContext.Provider value={{
+      theme, setTheme, isDark,
+      backgroundUrl, palette,
+      setBackground, clearBackground,
+    }}>
       {children}
     </ThemeContext.Provider>
   );
 }
 
-export function useTheme() {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error("useTheme must be used within ThemeProvider");
-  }
-  return context;
-}
+export const useTheme = () => useContext(ThemeContext);

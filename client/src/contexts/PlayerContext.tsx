@@ -16,6 +16,7 @@ interface PlayerContextType {
   isFullPlayerOpen: boolean;
   isQueueOpen: boolean;
   isLyricsOpen: boolean;
+  audioRef: React.RefObject<HTMLAudioElement | null>;
   play: (song: Song, queue?: Song[], index?: number) => void;
   playQueue: (songs: Song[], index?: number) => void;
   pause: () => void;
@@ -296,6 +297,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
       addToQueue, removeFromQueue, reorderQueue, clearQueue,
       setFullPlayerOpen, setQueueOpen, setLyricsOpen,
       getFileForSong, registerFileHandles,
+      audioRef,
     }}>
       {children}
     </PlayerContext.Provider>

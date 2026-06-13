@@ -6,6 +6,7 @@ import {
   SkipForward, Repeat, Repeat1, Volume2, VolumeX, FileText, Music2,
 } from 'lucide-react';
 import LyricsPanel from './LyricsPanel';
+import { AudioVisualizer } from './AudioVisualizer';
 import { useLibrary } from '@/contexts/LibraryContext';
 import { Slider } from '@/components/ui/slider';
 
@@ -15,6 +16,7 @@ export default function FullPlayer() {
     isShuffled, repeatMode, isLyricsOpen,
     togglePlay, next, prev, seek, setVolume, toggleMute,
     toggleShuffle, cycleRepeat, setFullPlayerOpen, setQueueOpen, setLyricsOpen,
+    audioRef,
   } = usePlayer();
   const { favorites, toggleFavorite } = useLibrary();
   const [bgColor, setBgColor] = useState('hsl(264, 43%, 15%)');
@@ -60,6 +62,16 @@ export default function FullPlayer() {
           <p className="m3-label-medium text-white/60 uppercase tracking-[0.12em]">Now Playing</p>
         </div>
         <div className="w-12" />
+      </div>
+
+      {/* Audio Visualizer */}
+      <div className="px-6 py-4 shrink-0">
+        <AudioVisualizer
+          audioRef={audioRef}
+          isPlaying={isPlaying}
+          barCount={32}
+          height={100}
+        />
       </div>
 
       {/* Album art — fills available vertical space */}

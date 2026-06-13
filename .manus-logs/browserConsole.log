@@ -1,0 +1,91 @@
+[2026-06-13T08:57:59.814Z] {"timestamp":1781341075294,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T08:57:59.814Z] {"timestamp":1781341075402,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T08:58:02.393Z] {"timestamp":1781341080389,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T08:58:02.393Z] {"timestamp":1781341080439,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T08:58:02.393Z] {"timestamp":1781341080589,"level":"INFO","args":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"],"stack":null}
+[2026-06-13T08:58:21.753Z] {"timestamp":1781341099741,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T08:58:21.753Z] {"timestamp":1781341099746,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T08:58:21.753Z] {"timestamp":1781341099928,"level":"INFO","args":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"],"stack":null}
+[2026-06-13T08:58:28.038Z] {"timestamp":1781341104948,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T08:58:28.038Z] {"timestamp":1781341105587,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T08:58:55.583Z] {"timestamp":1781341132473,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T08:58:55.583Z] {"timestamp":1781341133114,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T08:59:42.388Z] {"timestamp":1781341179285,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T08:59:42.388Z] {"timestamp":1781341181136,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T08:59:44.463Z] {"timestamp":1781341183119,"level":"INFO","args":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"],"stack":null}
+[2026-06-13T09:01:44.016Z] {"timestamp":1781341302029,"level":"DEBUG","args":["[vite]","invalidate /src/contexts/PlayerContext.tsx: Could not Fast Refresh (\"usePlayer\" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports"],"stack":null}
+[2026-06-13T09:01:44.016Z] {"timestamp":1781341302031,"level":"DEBUG","args":["[vite]","hot updated: /src/contexts/PlayerContext.tsx"],"stack":null}
+[2026-06-13T09:01:44.016Z] {"timestamp":1781341302031,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304141,"level":"DEBUG","args":["[vite]","hot updated: /src/App.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304141,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/Search.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304143,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/AlbumDetail.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304144,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/ArtistDetail.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304146,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/Library.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304147,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/Home.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304147,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/PlaylistDetail.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304148,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/PlayerSyncBridge.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304148,"level":"DEBUG","args":["[vite]","hot updated: /src/components/layout/Layout.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304148,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/MiniPlayer.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304148,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/QueueSheet.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304150,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/FullPlayer.tsx"],"stack":null}
+[2026-06-13T09:01:45.656Z] {"timestamp":1781341304151,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/LyricsPanel.tsx"],"stack":null}
+[2026-06-13T09:01:47.985Z] {"timestamp":1781341306186,"level":"DEBUG","args":["[vite]","invalidate /src/contexts/PlayerContext.tsx: Could not Fast Refresh (\"usePlayer\" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports"],"stack":null}
+[2026-06-13T09:01:47.985Z] {"timestamp":1781341306186,"level":"DEBUG","args":["[vite]","hot updated: /src/contexts/PlayerContext.tsx"],"stack":null}
+[2026-06-13T09:01:47.985Z] {"timestamp":1781341306186,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/App.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/Search.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/AlbumDetail.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/ArtistDetail.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/Library.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/Home.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/pages/PlaylistDetail.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307518,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/PlayerSyncBridge.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307519,"level":"DEBUG","args":["[vite]","hot updated: /src/components/layout/Layout.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307519,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/MiniPlayer.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307519,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/QueueSheet.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307519,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/FullPlayer.tsx"],"stack":null}
+[2026-06-13T09:01:49.552Z] {"timestamp":1781341307519,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/LyricsPanel.tsx"],"stack":null}
+[2026-06-13T09:01:56.425Z] {"timestamp":1781341313406,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:01:56.425Z] {"timestamp":1781341314087,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:01:58.422Z] {"timestamp":1781341316839,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/FullPlayer.tsx"],"stack":null}
+[2026-06-13T09:01:58.422Z] {"timestamp":1781341316840,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:02:04.451Z] {"timestamp":1781341321364,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:02:04.451Z] {"timestamp":1781341322016,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:02:04.452Z] {"timestamp":1781341322494,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/FullPlayer.tsx"],"stack":null}
+[2026-06-13T09:02:04.452Z] {"timestamp":1781341322494,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:02:08.291Z] {"timestamp":1781341325281,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:02:08.291Z] {"timestamp":1781341325981,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:02:08.371Z] {"timestamp":1781341327306,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:02:08.372Z] {"timestamp":1781341327306,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/AudioVisualizer.tsx"],"stack":null}
+[2026-06-13T09:02:10.322Z] {"timestamp":1781341327481,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:02:10.322Z] {"timestamp":1781341327481,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/AudioVisualizer.tsx"],"stack":null}
+[2026-06-13T09:02:10.448Z] {"timestamp":1781341327687,"level":"DEBUG","args":["[vite]","hot updated: /src/index.css"],"stack":null}
+[2026-06-13T09:02:10.448Z] {"timestamp":1781341327687,"level":"DEBUG","args":["[vite]","hot updated: /src/components/player/AudioVisualizer.tsx"],"stack":null}
+[2026-06-13T09:02:11.931Z] {"timestamp":1781341328891,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:02:11.931Z] {"timestamp":1781341329515,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:02:20.651Z] {"timestamp":1781341337609,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:02:20.651Z] {"timestamp":1781341338210,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:02:22.351Z] {"timestamp":1781341340348,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:02:22.351Z] {"timestamp":1781341340360,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:02:22.351Z] {"timestamp":1781341340529,"level":"INFO","args":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"],"stack":null}
+[2026-06-13T09:02:39.312Z] {"timestamp":1781341355884,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:02:39.312Z] {"timestamp":1781341356522,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:15:51.894Z] {"timestamp":1781342147712,"level":"LOG","args":["[vite] server connection lost. Polling for restart..."],"stack":null}
+[2026-06-13T09:15:51.895Z] {"timestamp":1781342150328,"level":"LOG","args":["[vite] server connection lost. Polling for restart..."],"stack":null}
+[2026-06-13T09:15:51.896Z] {"timestamp":1781342150239,"level":"LOG","args":["[vite] server connection lost. Polling for restart..."],"stack":null}
+[2026-06-13T09:15:51.896Z] {"timestamp":1781342150140,"level":"LOG","args":["[vite] server connection lost. Polling for restart..."],"stack":null}
+[2026-06-13T09:15:51.897Z] {"timestamp":1781342147789,"level":"LOG","args":["[vite] server connection lost. Polling for restart..."],"stack":null}
+[2026-06-13T09:15:59.338Z] {"timestamp":1781342155702,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:15:59.338Z] {"timestamp":1781342156845,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:15:59.339Z] {"timestamp":1781342155759,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:15:59.342Z] {"timestamp":1781342156041,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:16:00.377Z] {"timestamp":1781342156983,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:16:01.987Z] {"timestamp":1781342157322,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:16:01.987Z] {"timestamp":1781342158528,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:16:01.988Z] {"timestamp":1781342159118,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:16:02.631Z] {"timestamp":1781342160330,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:16:02.632Z] {"timestamp":1781342161206,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:16:25.401Z] {"timestamp":1781342181769,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:16:25.401Z] {"timestamp":1781342183209,"level":"DEBUG","args":["[vite] connected."],"stack":null}
+[2026-06-13T09:16:27.466Z] {"timestamp":1781342183861,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-06-13T09:16:27.466Z] {"timestamp":1781342184519,"level":"DEBUG","args":["[vite] connected."],"stack":null}

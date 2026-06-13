@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663756774000/MfCDVcZgNQGNZnKzKxVFxC",
+    "access_key_id": "ASIAZV3A2ECZJIPIIN55",
+    "secret_access_key": "dCZJfu8NQFVMS2bMu9Eu/Lnj4e7qHyY06EaED8H9",
+    "session_token": "IQoJb3JpZ2luX2VjEGEaCXVzLWVhc3QtMSJHMEUCIQCWPRnxRdFKogtpBAb87BemmMfBz/bPJtDbnIjoGoER/gIgK+dwaQWc4IJ5+OvtViqd6sLx01RcyNk1Zj7B9KCng1Iq9gMIKhAEGgw2NjUzODYwOTg4NjYiDL+2VceuGj1E1wNuxyrTA50zFpY1JEwuazoCoP5AyNglNutODLJwLtaVbc3sVxk0n5XKREROe/EhyhVt2V91cAALPUYKO4bsUicyEPaG8KOGVrF4NukGL/wth+zVzgY+GKpkUm/630Ck3oKIL3oM5Cowqs3WU7MCWVuIL6etZECMGtPTWOCgV9n5jjq1O7x851FAM0Z6EHhEbVIBw7v9Zx27jvgo9H4fyxvAthYgrIyEj9A5M4Em9K+jHDtdEqBt1KeHSBE3fxWxY+eJXFrLM10SFVW8szZPLt71zbtQS0Yj76iqUfziAKBwaoVwEUzGHJJz1a73OyWhbJ0xVR23hWYVFXGcIWYur9bZGpLIQBJRYSTUgWe96IYUZvCTY1DYJRxL+/TSGnm8PrzLHcXy3J6Ka+kdy+33FikxY9DSn/MiFIRD8vecwbObDvnwPkxFA4AkwSTbSS3wFy+wHBSU6KoHGaGkSKakR/oMBnsL0FcLBGqK3TwJkERTjY/3lGxxbbUiQtDEdQov6JtVRgx0kvoSaar1slEhdeyMI1nTOX7HvxYqm1Fd0L9U+d1QbgWZVRfcwR6AMAfVZicvZmm9zDYGZbe53WuDL+tGxM80DM01npfM4DultAqRhXZKf8ybP7ooMJS2tNEGOp0BCPIXlHM8YC4BtAsOKP2IeqLuHRkePF9EZtkWx9ngYUBMVaMRQrUwYwXU+zwZRhzMV2i8jbjhstsTze/8UQd47N2FRWspfTL+wbbEtuoa5QhihOvGGfmenm8XRrHEg/bCQ3y28M63qjsBtQvU1K31aXFS38fSmorr1/yOpTdPhykBiu+GAnlIZxqinUXvKKr03GnEBOOYhUHS9FYnIQ==",
+    "expiration": "2026-06-13T20:55:48.000Z"
+  },
+  "name": "pixel-player",
+  "path": "/home/ubuntu/pixel-player",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "oCfBCVY3u52gAG77b8BvsH",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "B4odihxLABP8wzkGwQE4KL",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Wadeea Shaath",
+    "OWNER_OPEN_ID": "ZYmJxrRXaBNAJfRf6jDrjS",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "0c1c8dd9-ca04-4a41-ad03-9c3daba878f4",
+    "VITE_APP_ID": "MfCDVcZgNQGNZnKzKxVFxC",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Pixel Player",
+    "VITE_FRONTEND_FORGE_API_KEY": "Js6FDtQQyN4nauT6UWCxJF",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}

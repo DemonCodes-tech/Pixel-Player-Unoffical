@@ -206,7 +206,7 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: process.env.GITHUB_PAGES ? '/Pixel-Player/' : '/',
+  base: process.env.GITHUB_PAGES ? '/Pixel-Player-Unoffical/' : '/',
   plugins,
   resolve: {
     alias: {
